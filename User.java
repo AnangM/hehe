@@ -11,6 +11,14 @@ class User{
         this.password = passwd;
     }
 
+    public String getUsername(){
+        return this.username;
+    }
+
+    public String getPassword(){
+        return this.password;
+    }
+
     public void addPelajaran(Pelajaran pel){
         if(pelajaran.size() <= 7){
             pelajaran.add(pel);
