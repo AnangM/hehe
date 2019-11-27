@@ -12,7 +12,11 @@ class User{
     }
 
     public void addPelajaran(Pelajaran pel){
-        pelajaran.add(pel);
+        if(pelajaran.size() <= 7){
+            pelajaran.add(pel);
+        }else{
+            System.out.println("Error: Daftar pelajaran sudah penuh");
+        }
     }
 
     public Pelajaran getTertinggi(){
